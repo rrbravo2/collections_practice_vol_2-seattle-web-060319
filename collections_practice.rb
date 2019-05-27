@@ -22,11 +22,13 @@ def remove_non_strings(array)
 end
 
 def count_elements(array)
-count = 0
- array.uniq.each do |i|
-   array.each do |name|
-     if name == i
-    i[:count] = count
-     end
+ count = Hash.new(0)
+ array.each {|name| count[name] += 1}
+ return_array = []
+ count.each do |name, number|
+   name.each {|key, value| return_array << {key => value, :count => number}}
+    end
    end
-  end
+   return_array
+ end
+end
