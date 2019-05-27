@@ -38,3 +38,15 @@ def merge_data(keys, data)
  end
  result
 end
+
+def find_cool(cool)
+ new_array = []
+ cool.each do |word|
+   word.each do |key, value|
+   if value == "cool"
+     new_array.push(word)
+   end
+  end
+ end
+ new_array
+end 
