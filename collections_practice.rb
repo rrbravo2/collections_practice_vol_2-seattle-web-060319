@@ -13,3 +13,10 @@ end
 def first_wa(array)
  array.detect {|word| word.to_s.start_with?("wa")}
 end
+
+def non_strings(array)
+  array.delete_if do |str|
+    str.class != String
+ end
+ array
+end
