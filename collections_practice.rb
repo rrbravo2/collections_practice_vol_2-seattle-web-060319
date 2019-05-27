@@ -30,5 +30,3 @@ def count_elements(array)
     end
  return_array 
    end
-   
-  
