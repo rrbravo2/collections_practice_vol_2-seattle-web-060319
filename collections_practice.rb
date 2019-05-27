@@ -26,7 +26,7 @@ count = 0
  array.uniq.each do |i|
    array.each do |name|
      if name == i
-       count += 0
+       count += 2
     i[:count] = count
      end
    end
