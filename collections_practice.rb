@@ -25,9 +25,8 @@ def count_elements(array)
 count = 0
  array.uniq.each do |i|
    array.each do |name|
-     if name == i 
+     if name == i
     i[:count] = count
      end
    end
   end
-
