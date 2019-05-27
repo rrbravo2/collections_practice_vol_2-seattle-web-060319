@@ -49,4 +49,17 @@ def find_cool(cool)
   end
  end
  new_array
-end 
+end
+
+def organized_schools(schools)
+  result = Hash.new
+  schools.each do |key, value|
+    if result[value[:location]] == nil
+      result [value[:location]] = []
+      result [value[:location]].push(key)
+    else
+      result[value[:location]].push(key)
+    end
+  end
+  result
+end  
