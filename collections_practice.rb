@@ -28,6 +28,7 @@ def count_elements(array)
  count.each do |name, number|
    name.each {|key, value| return_array << {key => value, :count => number}}
     end
+ return_array 
    end
-   return_array
+   
   
