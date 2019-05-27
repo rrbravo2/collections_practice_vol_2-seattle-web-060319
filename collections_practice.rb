@@ -27,7 +27,7 @@ count = 0
    array.each do |name|
      if name == i
      else
-        count => 1
+        count > 1
     i[:count] = count
      end
    end
