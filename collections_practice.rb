@@ -14,7 +14,7 @@ def first_wa(array)
  array.detect {|word| word.to_s.start_with?("wa")}
 end
 
-def non_strings(array)
+def remove_non_strings(array)
   array.delete_if do |element|
     element.class != String
  end
