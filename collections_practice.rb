@@ -20,3 +20,15 @@ def remove_non_strings(array)
  end
  array
 end
+
+def count_elements(array)
+count = 0
+ array.uniq.each do |i|
+   array.each do |name|
+     if name == i
+       count += 1
+    i[:count] = count
+     end
+   end
+  end
+end
