@@ -30,4 +30,6 @@ def count_elements(array)
     end
    end
    return_array
+  end 
  end
+end
