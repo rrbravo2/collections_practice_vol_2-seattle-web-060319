@@ -11,5 +11,5 @@ def contain_a(array)
 end
 
 def first_wa(array)
- array.detect {|word| word.s.start_with?("wa")}
+ array.detect {|word| word.to_s.start_with?("wa")}
 end
