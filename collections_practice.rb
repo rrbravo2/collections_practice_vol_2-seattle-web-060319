@@ -8,7 +8,7 @@ def contain_a(array)
  array.select do |str|
    str.include?("a")
  end
-end 
+end
 
 def first_wa(array)
  array.detect {|word| word.s.start_with?("wa")}
