@@ -23,7 +23,7 @@ end
 
 def count_elements(array)
 count = 0
- array.uniq.each |i|
+ array.uniq.each do |i|
    array.each do |name|
      if name == i
        count += 1
