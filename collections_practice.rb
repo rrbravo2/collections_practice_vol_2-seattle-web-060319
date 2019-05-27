@@ -31,7 +31,7 @@ def count_elements(array)
  return_array
    end
 
-def merged_data(keys, data)
+def merge_data(keys, data)
   result = []
   keys.each_with_index do |x, i|
     result << keys[i].merge(data[0][keys[i].values[0]])
